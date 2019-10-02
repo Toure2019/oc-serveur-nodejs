@@ -10,8 +10,14 @@ app.get('/', (req, res) => {
 });
 
 app.get('/users', (req, res) => {
+	const usersList = [
+		{firstName: 'Bob', lastName: 'Morane'},
+		{firstName: 'Phill', lastName: 'Austine'},
+		{firstName: 'Yacoub', lastName: 'Sylla'}
+	];
 	res.writeHead(200, { 'Content-Type': 'text/html' });
-	res.end('<h1>Utilisateurs</h1>');
+	res.write('<h1>Utilisateurs</h1>');
+	res.end(JSON.stringify(usersList));
 });
 
 app.post('/users/signout', usersCtrl.signout);
