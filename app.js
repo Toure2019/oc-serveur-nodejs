@@ -16,6 +16,8 @@ app.get('/users', (req, res) => {
 
 app.post('/users/signout', usersCtrl.signout);
 
+app.post('/users/signin', usersCtrl.signin);
+
 
 http.createServer(app).listen(3000, () => {
 	console.log('Express sever listening on port 3000');
