@@ -1,0 +1,23 @@
+{
+  "name": "serveur-nodejs",
+  "version": "1.0.0",
+  "description": "activité openclassrooms sur git & github",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toure2019/oc-serveur-nodejs.git"
+  },
+  "author": "Toure2019",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toure2019/oc-serveur-nodejs/issues"
+  },
+  "homepage": "https://github.com/Toure2019/oc-serveur-nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
